@@ -1,0 +1,25 @@
+body {
+	font-family: 'Heebo', sans-serif;
+	font-size: $default-font-size;
+	line-height: 2.35rem;
+	color: $color-black-2;
+	font-weight: 400;
+}
+
+.heading-1 {
+	font-size: 4.4rem;
+	font-weight: 700;
+	line-height: 6rem;
+}
+
+.heading-2 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 4.4rem;
+}
+
+.heading-3 {
+	font-size: 2.6rem;
+	font-weight: 700;
+	line-height: 3.8rem;
+}
