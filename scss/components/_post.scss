@@ -2,6 +2,7 @@
 	min-height: 30rem;
 	background-color: $color-white-1;
 	padding: 2.5rem;
+	cursor: pointer;
 
 	&__info {
 		margin: 2rem 0;
@@ -16,6 +17,10 @@
 		background-color: $color-black-1;
 		line-height: 2rem;
 		margin: 0 3rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin: 0 1.5rem;
+		}
 	}
 
 	&__text {

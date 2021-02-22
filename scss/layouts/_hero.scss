@@ -2,11 +2,30 @@
 	display: grid;
 	grid-template-columns: 50rem 1fr;
 
+	@media only screen and (max-width: $bp-medium) {
+		grid-template-columns: 1fr;
+	}
+
+	&__info {
+		@media only screen and (max-width: $bp-medium) {
+			text-align: center;
+		}
+	}
+
 	&__paragraph {
+		@media only screen and (max-width: $bp-medium) {
+			margin: 2rem 0;
+		}
 		margin: 4rem 0;
 	}
 
 	&__img-box {
+		@media only screen and (max-width: $bp-medium) {
+			grid-row: 1;
+			margin-bottom: 4rem;
+			width: 17rem;
+			height: 17rem;
+		}
 		width: 24.3rem;
 		height: 24.3rem;
 		margin: 0 auto;

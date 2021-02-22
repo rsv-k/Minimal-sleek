@@ -2,11 +2,49 @@
 	display: flex;
 	justify-content: flex-end;
 
+	&__nav {
+		@media only screen and (max-width: $bp-medium) {
+			display: none;
+		}
+	}
+
 	&__link {
 		color: $color-black-1;
 		text-decoration: none;
 		&:not(:last-child) {
 			margin-right: 2rem;
+		}
+	}
+
+	&__hamburger {
+		display: none;
+		border: 0;
+		border-radius: 0;
+		width: 3rem;
+		height: 2px;
+		background-color: $color-black-1;
+		cursor: pointer;
+		outline: none;
+
+		@media only screen and (max-width: $bp-medium) {
+			display: block;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 3rem;
+			height: 2px;
+			background-color: $color-black-1;
+		}
+
+		&::before {
+			transform: translateY(0.8rem);
+		}
+
+		&::after {
+			transform: translateY(-1rem);
 		}
 	}
 }

@@ -1,0 +1,18 @@
+.footer {
+	margin-top: 11.5rem;
+	text-align: center;
+
+	&__list {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		margin: 0 2rem;
+	}
+
+	&__copyright {
+		margin-top: 2.6rem;
+	}
+}
