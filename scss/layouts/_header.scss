@@ -1,0 +1,14 @@
+.header {
+	grid-column: center-start / center-end;
+
+	display: flex;
+	justify-content: flex-end;
+
+	&__link {
+		color: $color-black-1;
+		text-decoration: none;
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+}

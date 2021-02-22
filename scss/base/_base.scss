@@ -15,6 +15,9 @@ html {
 	display: grid;
 	grid-template-columns:
 		minmax(6rem, 1fr)
+		[center-start]
 		repeat(10, 10rem)
+		[center-end]
 		minmax(6rem, 1fr);
+	padding: 3rem 0;
 }
