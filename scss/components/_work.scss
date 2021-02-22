@@ -1,0 +1,39 @@
+.work {
+	display: grid;
+	grid-template-columns: min-content minmax(min-content, 59.4rem);
+	grid-gap: 3rem;
+	cursor: pointer;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid $color-grey-light-2;
+
+	&__img-box {
+		width: 24.6rem;
+		height: 18rem;
+	}
+
+	&__info {
+		user-select: none;
+	}
+
+	&__date {
+		background-color: $color-black-3;
+		color: $color-white-1;
+		padding: 0.1rem 1.5rem;
+		border-radius: 20px;
+		font-weight: 900;
+		font-size: 1.8rem;
+		line-height: 6rem;
+		margin-right: 3.6rem;
+	}
+
+	&__type {
+		color: $color-grey-dark-1;
+		font-size: 2rem;
+		line-height: 3rem;
+		font-weight: 400;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+}
