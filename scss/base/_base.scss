@@ -20,4 +20,9 @@ html {
 		[center-end]
 		minmax(6rem, 1fr);
 	padding: 3rem 0;
+	grid-row-gap: 14rem;
+
+	& > * {
+		grid-column: center-start / center-end;
+	}
 }
