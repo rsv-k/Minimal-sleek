@@ -1,0 +1,36 @@
+.recent-posts {
+	grid-column: full-start / full-end;
+
+	display: grid;
+	grid-template-columns:
+		minmax(6rem, 1fr)
+		[center-start]
+		repeat(10, minmax(min-content, 10rem))
+		[center-end]
+		minmax(6rem, 1fr);
+	background-color: $color-grey-light-1;
+	padding-bottom: 3.2rem;
+
+	&__header {
+		grid-column: center-start / center-end;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__link {
+		color: $color-blue-1;
+		text-decoration: none;
+		line-height: 2.35rem;
+	}
+
+	&__content {
+		grid-row: 2;
+		grid-column: center-start / center-end;
+
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(auto-fit, 42rem);
+		justify-content: space-between;
+	}
+}

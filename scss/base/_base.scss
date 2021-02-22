@@ -14,11 +14,13 @@ html {
 .container {
 	display: grid;
 	grid-template-columns:
+		[full-start]
 		minmax(6rem, 1fr)
 		[center-start]
-		repeat(10, 10rem)
+		repeat(10, minmax(min-content, 10rem))
 		[center-end]
-		minmax(6rem, 1fr);
+		minmax(6rem, 1fr)
+		[full-end];
 	padding: 3rem 0;
 	grid-row-gap: 14rem;
 

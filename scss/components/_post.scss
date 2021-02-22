@@ -1,0 +1,25 @@
+.post {
+	max-width: 42rem;
+	min-height: 30rem;
+	background-color: $color-white-1;
+	padding: 2.5rem;
+
+	&__info {
+		margin: 2rem 0;
+		display: flex;
+		align-items: center;
+	}
+
+	&__divider {
+		display: block;
+		height: 20px;
+		width: 1px;
+		background-color: $color-black-1;
+		line-height: 2rem;
+		margin: 0 3rem;
+	}
+
+	&__text {
+		line-height: 2.35rem;
+	}
+}
